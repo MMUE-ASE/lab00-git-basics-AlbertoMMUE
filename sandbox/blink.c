@@ -42,7 +42,6 @@ void blink_once(unsigned int delay_ms)
     // LED_PIN on
     (void)delay_ms;
     // LED_PIN off
-    (void)delay_ms;
 }
 
 /*
