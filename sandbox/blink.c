@@ -38,7 +38,6 @@ void blink_init(void)
  */
 void blink_once(unsigned int delay_ms)
 {
-    /* TODO (Ejercicio B): implement on branch feat/blink-led */
     // LED_PIN on
     (void)delay_ms;
     // LED_PIN off
@@ -52,7 +51,6 @@ void blink_once(unsigned int delay_ms)
  */
 void blink_n_times(unsigned int n, unsigned int delay_ms)
 {
-    /* TODO (Ejercicio E): implement on branch feat/blink-n-times */
     for(unsigned int i = 0; i < n; i++){
         blink_once(delay_ms);
     }
