@@ -1,7 +1,7 @@
 /*
  * blink.c — LED blink skeleton for Git workflow practice
  *
- * Author: TODO (Ejercicio A: escribe aqui tu nombre)
+ * Author: Alberto Martinez
  *
  * This file is intentionally incomplete. Its purpose is to give students
  * a real C file to modify across multiple commits during Lab 0.
@@ -24,6 +24,7 @@
 void blink_init(void)
 {
     /* TODO (Ejercicio A): add placeholder comment here */
+    /*clock enabled*/
 }
 
 /*
@@ -37,8 +38,9 @@ void blink_init(void)
  */
 void blink_once(unsigned int delay_ms)
 {
-    /* TODO (Ejercicio B): implement on branch feat/blink-led */
+    // LED_PIN on
     (void)delay_ms;
+    // LED_PIN off
 }
 
 /*
@@ -49,9 +51,9 @@ void blink_once(unsigned int delay_ms)
  */
 void blink_n_times(unsigned int n, unsigned int delay_ms)
 {
-    /* TODO (Ejercicio E): implement on branch feat/blink-n-times */
-    (void)n;
-    (void)delay_ms;
+    for(unsigned int i = 0; i < n; i++){
+        blink_once(delay_ms);
+    }
 }
 
 int main(void)
